@@ -1,0 +1,151 @@
+:root {
+	--rojo: #E50914;
+	--fondo: #141414;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: var(--fondo);
+	font-family: 'Open Sans', sans-serif;
+}
+
+.contenedor {
+	width: 90%;
+	margin: auto;
+}
+
+header {
+	padding: 30px 0;
+}
+
+header .contenedor {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .logotipo {
+	font-family: 'Bebas Neue', cursive;
+	font-weight: normal;
+	color: var(--rojo);
+	font-size: 40px;
+}
+
+header nav a {
+	color: #AAA;
+	text-decoration: none;
+	margin-right: 20px;
+}
+
+header nav a:hover,
+header nav a.activo {
+	color: #FFF;
+}
+
+.pelicula-principal {
+	font-size: 18px;
+	min-height: 700px;
+	color: #fff;
+	background: linear-gradient(rgba(75, 75, 75, 0.3) 0%, rgba(0,0,0,.50) 100%), url(https://www.themoviedb.org/t/p/original/dq18nCTTLpy9PmtzZI6Y2yAgdw5.jpg);
+	background-position: center center;
+	background-size: cover;
+	margin-bottom: 55px;
+	display: flex;
+	align-items: end;
+}
+
+.pelicula-principal .contenedor {
+	margin: 0 auto;
+	margin-bottom: 70px;
+}
+
+.pelicula-principal .titulo {
+	font-weight: 600;
+	font-size: 60px;
+	margin-bottom: 15px;
+}
+
+.pelicula-principal .descripcion {
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 30px;
+	max-width: 50%;
+	margin-bottom: 20px;
+}
+
+.pelicula-principal .boton {
+	background: rgba(27, 27, 27, .50);
+	padding: 12px 12px;
+	color: #fff;
+	margin-right: 18px;
+	cursor: pointer;
+	transition: .3s ease all;
+	font-size: 15px;
+}
+
+.pelicula-principal .boton:hover {
+	background: rgb(0, 0, 0);
+	color: rgb(255, 0, 0);
+}
+
+.pelicula-principal .boton i {
+	margin-right: 20px;
+}
+
+.contenedor-titulo-controles {
+	display: flex;
+	justify-content: space-between;
+	align-items: end;
+}
+
+.contenedor-titulo-controles h3 {
+	color: rgb(255, 0, 0);
+	font-size: 30px;
+}
+
+.peliculas-recomendadas .contenedor-principal {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.peliculas-recomendadas .contenedor-principal {
+	left: 0;
+}
+
+.peliculas-recomendadas .contenedor-principal {
+	right: 0;
+}
+
+.peliculas-recomendadas .contenedor-carousel {
+	width: 100%;
+	padding: 20px 0;
+	overflow: hidden;
+	scroll-behavior: smooth;
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula {
+	min-width: 20%;
+	transition: .3s ease all;
+	box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.3);
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula.hover {
+	transform: scale(1.2);
+	transform-origin: center;
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula img {
+	width: 100%;
+	vertical-align: top;
+}
